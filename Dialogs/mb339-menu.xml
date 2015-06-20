@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Aermacchi MB-339</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Show/hide smoke tanks</label>
+        <binding>
+          <command>property-toggle</command>
+          <!-- /sim/model/hide-smoketanks -->
+          <property>sim/multiplay/generic/int[11]</property>
+        </binding>
+      </item>
+      <item>
+        <label>Show/hide wings tanks</label>
+        <binding>
+          <command>property-toggle</command>
+          <!-- /sim/model/hide-tanks -->
+          <property>sim/multiplay/generic/int[14]</property>
+        </binding>
+      </item>
+      <item>
+        <label>Show/hide tips tanks</label>
+        <binding>
+          <command>property-toggle</command>
+          <!-- /sim/model/hide-tiptanks -->
+          <property>sim/multiplay/generic/int[6]</property>
+        </binding>
+      </item>
+      <item>
+        <label>Show/hide Probe</label>
+        <binding>
+          <command>property-toggle</command>
+          <!-- /sim/model/hide-probe -->
+          <property>sim/multiplay/generic/int[15]</property>
+        </binding>
+      </item>
+      <!--
+      <item>
+        <label>Immatriculation</label>
+        <binding>
+          <command>nasal</command>
+          <script>mb39.immat_dialog.toggle()</script>
+        </binding>
+      </item>
+      -->
+    </menu>
+  </default>
+
+</PropertyList>
