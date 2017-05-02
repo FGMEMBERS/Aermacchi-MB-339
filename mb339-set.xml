@@ -10,6 +10,22 @@
     
     <flight-model>yasim</flight-model>
     <aero>mb339-yasim</aero>
+
+    <tags>
+      <tag>aermacchi</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>single-engine</tag>
+      <tag>jet</tag>
+      <tag>ifr</tag>
+      <tag>trainer</tag>
+      <tag>1970s</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+      <tag>2010s</tag>
+    </tags>
     
     <rating>
       <FDM type="int">     3 </FDM>
