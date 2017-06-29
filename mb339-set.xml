@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<PropertyList include="mb339-base.xml">
-
-  <sim>
-
+<PropertyList include="Systems/mb339-base.xml">
+  
+  <sim include="Systems/views-pilot.xml">
+    
     <description>Aermacchi MB 339 (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
+    
     <status>alpha</status> 
     
     <flight-model>yasim</flight-model>
-    <aero>mb339-yasim</aero>
+    <aero>Systems/mb339-yasim</aero>
 
+    <model>
+      <path>Aircraft/Aermacchi-MB-339/Models/mb339.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <hide-tiptanks>false</hide-tiptanks>
+      <hide-smoketanks>true</hide-smoketanks>
+      <hide-tanks>false</hide-tanks>
+      <hide-probe>false</hide-probe>
+      <hide-arm>true</hide-arm>
+    </model>
+    
     <tags>
       <tag>aermacchi</tag>
       <tag>low-wing</tag>
@@ -33,7 +46,24 @@
       <cockpit type="int"> 4 </cockpit>
       <model type="int">   4 </model>
     </rating>
-
+    
   </sim>
-
+  
+  <nasal>
+    <dual_control_tools>
+      <file>Aircraft/Aermacchi-MB-339/Nasal/Gidenstam/dual-control-tools.nas</file>
+    </dual_control_tools>
+    <aircraft_dual_control>
+      <file>Aircraft/Aermacchi-MB-339/Nasal/dual-control.nas</file>
+    </aircraft_dual_control>
+    <dual_control>
+      <file>Aircraft/Aermacchi-MB-339/Nasal/Gidenstam/pilot-dual-control.nas</file>
+    </dual_control>
+  </nasal>
+  
+  <dual-control>
+    <active type="bool">0</active>
+    <i-am-the-pilot type="bool">1</i-am-the-pilot>
+  </dual-control>
+  
 </PropertyList>
