@@ -18,12 +18,6 @@
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
-    <object-name>intvitres</object-name>
-    <object-name>intverriere</object-name>
-  </effect>
-  
-  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intverriere</object-name>

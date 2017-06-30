@@ -4,6 +4,11 @@
 
   <path>mb339.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/SuperGuepard912/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Aermacchi-MB-339/Models/Liveries", 10);

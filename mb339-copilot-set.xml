@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Systems/mb339-base.xml">
+
+  <sim include="Systems/views-copilot.xml">
+    
+    <description>Aermacchi MB 339 Copilot (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    
+    <status>alpha</status> 
+    
+    <flight-model>null</flight-model>
+
+    <model>
+      <path>Aircraft/Aermacchi-MB-339/Models/mb339-cp.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <hide-tiptanks>false</hide-tiptanks>
+      <hide-smoketanks>true</hide-smoketanks>
+      <hide-tanks>false</hide-tanks>
+      <hide-probe>false</hide-probe>
+      <hide-arm>true</hide-arm>
+    </model>
+    
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
+  </sim>
+
+  <!-- Dual control depend on this value -->
+  <dual-control>
+    <active type="bool">0</active>
+    <i-am-the-pilot type="bool">0</i-am-the-pilot>
+  </dual-control>
+
+</PropertyList>
