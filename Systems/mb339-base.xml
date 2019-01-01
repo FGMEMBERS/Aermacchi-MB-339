@@ -54,10 +54,16 @@
         <string n="9" type="string" />
       </generic>
     </multiplay>
-    
+
     <help include="help.xml"/>
 
     <menubar include="../Dialogs/mb339-menu.xml"/>
+
+    <systems>
+      <property-rule n="100">
+        <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Instruments/hsi/hsi-filter.xml</path>
+      </property-rule>
+    </systems>
 
   </sim>
 

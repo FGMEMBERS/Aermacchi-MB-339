@@ -5,6 +5,7 @@
   <engine n="0">
     <engine-num type="int">0</engine-num>
     <running>true</running>
+    <rpm>2500</rpm>
   </engine>
   <engine n="1">
     <engine-num type="int">1</engine-num>
