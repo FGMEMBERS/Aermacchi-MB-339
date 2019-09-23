@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <sim>
+
+    <model>
+      <livery>
+        <name type="string">(High) 61 Stormo</name>
+        <texture>Liveries/4096x4096/61-stormo.png</texture>
+        <specular>
+          <red>   0.3 </red>
+          <green> 0.3 </green>
+          <blue>  0.3 </blue>
+        </specular>
+      </livery>
+      <hide-tiptanks>true</hide-tiptanks>
+      <hide-smoketanks>false</hide-smoketanks>
+      <hide-tanks>true</hide-tanks>
+      <hide-probe>true</hide-probe>
+    </model>
+    <multiplay>
+      <generic>
+        <!-- /sim/model/hide-tiptank -->
+        <int n="6" type="bool">true</int>
+        <!-- /sim/model/hide-smoketanks -->
+        <int n="11" type="bool">false</int>
+        <!-- /sim/model/hide-tanks -->
+        <int n="14" type="bool">true</int>
+        <!-- /sim/model/hide-probe -->
+        <int n="15" type="bool">true</int>
+      </generic>
+    </multiplay>
+    
+  </sim>
+
+</PropertyList>
